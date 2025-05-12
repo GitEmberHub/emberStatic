@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preload" as="image" href="bg/layer1-min.png" type="image/png">
+    <link rel="preload" as="image" href="bg/layer2-min.png" type="image/png">
+    <link rel="preload" as="image" href="bg/layer3-min.png" type="image/png">
+    <link rel="preload" as="image" href="bg/layer4-min.png" type="image/png">
+    <link rel="preload" href="VT323-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Ember - a collection by JT Hansen">
+    <title>Ember</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      #ember-explosion {
+        cursor: pointer;
+        position: relative;
+        color: rgb(155, 233, 125);
+      }
+      
+      .particle {
+        position: absolute;
+        background: rgb(155, 233, 125);
+        pointer-events: none;
+        z-index: 1000;
+      }
+
+      html, body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class="bg">
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+    <div class="layer layer4"></div>
+  </div>
+
+  <nav class="nav-bar">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+  <div class="home-text">
+    <h1>>> Welcome to <span id="ember-explosion">Ember</span></h1>
+    <p>A collection by <span>JT Hansen</span><span class="blink-cursor"></span></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html> 
